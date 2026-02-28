@@ -3,8 +3,6 @@ package co.edu.cesde.ga.app;
 import co.edu.cesde.ga.models.Person;
 import co.edu.cesde.ga.models.Student;
 import co.edu.cesde.ga.models.Teacher;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,5 +22,17 @@ public class Main {
 
         Person person1 = new Person(true, "Alejo", "Gomez", "1036930029", "123", 1L);
 
+
+        Student student1 = new Student();
+
+        Student student2 = new Student();
+        student2.setFirstName("Alejito");
+
+        Teacher teacher1 = new Teacher();
+        teacher1.setFirstName("Rodolfo");
+
+
+
     }
+
 }
