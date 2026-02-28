@@ -8,13 +8,21 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Person> people = new ArrayList<>();
+        System.out.println("hello word");
+        Person person2 = new Person();
+        Person person3 = new Person();
+        Person person4 = new Person();
 
-        people.add(new Student(true, "Carlos", "Perez", "1010", "S-01", 1L));
-        people.add(new Teacher(true, "Marta", "Ruiz", "2020", "T-01", 2L));
+        person2.setFirstName("Laura");
+        person2.getFirstName();
 
-        for (Person p : people) {
-            System.out.println("Registrado: " + p.getFirstName() + " " + p.getLastName());
-        }
+        person3.setFirstName("Mateo");
+        person3.getFirstName();
+
+        person4.setFirstName("juan");
+        person4.getFirstName();
+
+        Person person1 = new Person(true, "Alejo", "Gomez", "1036930029", "123", 1L);
+
     }
 }

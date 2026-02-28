@@ -1,7 +1,8 @@
 package co.edu.cesde.ga.models;
 
 public class Teacher extends Person {
-    private String code;
+
+    private String birthDate;
 
     public Teacher() {
         super();
@@ -9,9 +10,10 @@ public class Teacher extends Person {
 
     public Teacher(Boolean status, String firstName, String lastName, String documentNumber, String code, Long userId) {
         super(status, firstName, lastName, documentNumber, code, userId);
-        this.code = code;
     }
 
-    public String getCode() { return code; }
-    public void setCode(String code) { this.code = code; }
+    @Override
+    public  String toString(){
+        return "Teacher= " + super.toString() + '\'';
+    }
 }

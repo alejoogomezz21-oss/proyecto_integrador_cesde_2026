@@ -1,17 +1,30 @@
 package co.edu.cesde.ga.models;
 
 public class Student extends Person {
-    private String code;
+    private String birthDate;
 
     public Student() {
         super();
     }
 
-    public Student(Boolean status, String firstName, String lastName, String documentNumber, String code, Long userId) {
+    public Student(Boolean status, String firstName, String lastName, String documentNumber, String code, Long userId, String birthDate) {
         super(status, firstName, lastName, documentNumber, code, userId);
-        this.code = code;
+        this.birthDate = birthDate;
     }
 
-    public String getCode() { return code; }
-    public void setCode(String code) { this.code = code; }
+    public String getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    @Override
+    public  String toString(){
+        return "Student= " + super.toString() +
+                "birthDate='" + birthDate + '\'';
+    }
 }
+
+
