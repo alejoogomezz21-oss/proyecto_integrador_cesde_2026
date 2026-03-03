@@ -2,8 +2,6 @@ package co.edu.cesde.ga.models;
 
 public class Teacher extends Person {
 
-    private String birthDate;
-
     public Teacher() {
         super();
     }
